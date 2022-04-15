@@ -17,7 +17,7 @@ app.use(
 app.use(express.json());
 app.use(homeController.logRequests);
 
-app.get("/name/:myName", homeController.respondWithName)
+
 app.get("/home", homeController.homePage)
 app.get("/images/:imgNum", homeController.respondWithImage)
 
